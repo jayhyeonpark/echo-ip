@@ -1,0 +1,1000 @@
+ 1710  source ~/.bashrc
+ 1711  hp2
+ 1712  vi ~/.bashrc
+ 1713  hpnote
+ 1714  s 
+ 1715  which dockerd
+ 1716  sudo dockerd -D
+ 1717  rm /var/run/docker.pid
+ 1718  sudo rm /var/run/docker.pid
+ 1719  sudo dockerd -D
+ 1720  docker ps
+ 1721  ps -aef  | grep docker
+ 1722  kill -9 24490
+ 1723  sudo -9 24490
+ 1724  sudo kill -9 24490
+ 1725  sudo rm /var/run/docker.pid
+ 1726  systemctl
+ 1727  systemctl docker start
+ 1728  systemctl start docker
+ 1729  docker
+ 1730  docker ps
+ 1731  systemctl docker start
+ 1732  systemctl start docker
+ 1733  docker ps
+ 1734  hiostory
+ 1735  history
+ 1736  history | more
+ 1737  ls
+ 1738  sudo systemctl enable docker.service
+ 1739  docker ls
+ 1740  docker ps
+ 1741  restart
+ 1742  reboot
+ 1743  ssh -X ubuntu@165.194.49.109
+ 1744  ping 165.194.19.109
+ 1745  ping 165.194.49.109
+ 1746  ss
+ 1747  vi ~/.bashrc
+ 1748  hp
+ 1749  source hp
+ 1750  source ~/.bashrc
+ 1751  hp
+ 1752  ssh
+ 1753  ss
+ 1754  vi ~/.bashrc
+ 1755  hp
+ 1756  source ~/.bashrc
+ 1757  hp
+ 1758  vi ~/.bashrc
+ 1759  source ~/.bashrc
+ 1760  hp
+ 1761  curl -sfL https://get.k3s.io | INSTALL_K3S_EXEC="\
+ 1762      --disable traefik \
+ 1763      --disable metrics-server \
+ 1764      --node-name master --docker"     INSTALL_K3S_VERSION="v1.18.6+k3s1" sh -s -
+ 1765  mkdir ~/.kube
+ 1766  sudo cp /etc/rancher/k3s/k3s.yaml ~/.kube/config
+ 1767  sudo chown -R $(id -u):$(id -g) ~/.kube
+ 1768  echo "export KUBECONFIG=~/.kube/config" >> ~/.bashrc
+ 1769  source ~/.bashrc
+ 1770  kubectl cluster-info
+ 1771  kubectl get node -o wide
+ 1772  NODE_TOKEN=$(sudo cat /var/lib/rancher/k3s/server/node-token)
+ 1773  echo $NODE_TOKEN
+ 1774  MASTER_IP=$(kubectl get node master -ojsonpath="{.status.addresses[0].address}")
+ 1775  echo $MASTER_IP
+ 1776  ls
+ 1777  ls gpg
+ 1778  more gpg
+ 1779  scp gpg jaehyun@165.194.49.109
+ 1780  scp gpg jaehyun@165.194.49.109:/home/jaehyun
+ 1781  scp gpg jaehyun@165.194.49.109:/home/jaehyun -p 22
+ 1782  scp -p 22 gpg jaehyun@165.194.49.109:/home/jaehyun 
+ 1783  scp -P 22 gpg jaehyun@165.194.49.109:/home/jaehyun 
+ 1784  docker ps
+ 1785  docker ls
+ 1786  docker run -it ubnutu:latest ls
+ 1787  docker run -it ubnutu ls
+ 1788  history
+ 1789  docker run -it ubuntu bash
+ 1790  ls
+ 1791  cd core_kubernetes/
+ 1792  ls
+ 1793  cd chapters/
+ 1794  ls
+ 1795  cd 03
+ 1796  ls
+ 1797  cd ..
+ 1798  cd 02
+ 1799  ls
+ 1800  cd ..
+ 1801  cd 03
+ 1802  ls
+ 1803  more README.md 
+ 1804  ls
+ 1805  finger
+ 1806  clear
+ 1807  ls
+ 1808  exit
+ 1809  hp2
+ 1810  ss
+ 1811  hpnote
+ 1812  ls
+ 1813  exit
+ 1814  ls
+ 1815  finger
+ 1816  clear
+ 1817  ls
+ 1818  finger
+ 1819  history
+ 1820  cd core_kubernetes/
+ 1821  ls
+ 1822  cd chapters
+ 1823  ls
+ 1824  cd 01
+ 1825  ls
+ 1826  vi hello.py 
+ 1827  python hello.py
+ 1828  ls
+ 1829  more README.md 
+ 1830  docker ps
+ 1831  docker get pods
+ 1832  kubectl get pods
+ 1833  kubectl get pods -a
+ 1834  ls
+ 1835  cd ..
+ 1836  ls
+ 1837  docker run -it ubnutu bash
+ 1838  docker run --help
+ 1839  docker login
+ 1840  sudo docker login
+ 1841  ls
+ 1842  cd 03
+ 1843  ls
+ 1844  more README.md 
+ 1845  kubectl cluster-info
+ 1846  kubectl get node -o wide
+ 1847  ls
+ 1848  more README.md 
+ 1849  ls
+ 1850  NODE_TOKEN=$(sudo cat /var/lib/rancher/k3s/server/node-token)
+ 1851  echo $NODE_TOKEN
+ 1852  MASTER_IP=$(kubectl get node master -ojsonpath="{.status.addresses[0].address}")
+ 1853  echo $MASTER_IP
+ 1854  more README.md 
+ 1855  :q
+ 1856  systemctl status k3s.services
+ 1857  systemctl status k3s.service
+ 1858  more README.md 
+ 1859  hpnote
+ 1860  cd 
+ 1861  cd .ssh
+ 1862  ls
+ 1863  scp -P 22 ~/.ssh/id_ras.put jaehyun@165.194.49.109:.ssh/authorized_keys
+ 1864  scp -P 22 ~/.ssh/id_ras.pub jaehyun@165.194.49.109:.ssh/authorized_keys
+ 1865  pwd
+ 1866  ls
+ 1867  scp -P 22 ~/.ssh/id_rsa.pub jaehyun@165.194.49.109:.ssh/authorized_keys
+ 1868  hpnote
+ 1869  cd
+ 1870  scp apt-key.gpg jaehyun@165.194.49.109:
+ 1871  scp -P 22apt-key.gpg jaehyun@165.194.49.109:
+ 1872  scp -P 22 apt-key.gpg jaehyun@165.194.49.109:
+ 1873  ls
+ 1874  cd core_kubernetes/
+ 1875  ls
+ 1876  cd chapter
+ 1877  cd chapters/
+ 1878  cd ch3
+ 1879  ls
+ 1880  03
+ 1881  ls
+ 1882  cd 03
+ 1883  ls
+ 1884  more README.md 
+ 1885  kubeadm
+ 1886  kubectl get nodes
+ 1887  ls
+ 1888  more README.md 
+ 1889  curl -sfL https://get.k3s.io
+ 1890  curl -sfL https://get.k3s.io > k3s.sh
+ 1891  vi k3s.sh
+ 1892  ls
+ 1893  more README.md 
+ 1894  scp -P 22 k3s.sh jaehyun@165.194.49.109:
+ 1895  vi k3s.sh
+ 1896  scp -P 22 k3s.sh jaehyun@165.194.49.109:~
+ 1897  scp -P 7722 k3s.sh jaehyun@165.194.49.109:~
+ 1898  scp -P 22 k3s.sh jaehyun@165.194.49.109:~
+ 1899  scp -P 22 k3s.sh jaehyun@165.194.49.109:/tmp
+ 1900  kubectl get nodes
+ 1901  ls
+ 1902  more README
+ 1903  more README.md 
+ 1904  docker ps
+ 1905  clear
+ 1906  ls
+ 1907  kubectl get nodes
+ 1908  ls
+ 1909  more README.md 
+ 1910  kubectl cluser-info
+ 1911  kubectl cluster-info
+ 1912  kubectl cluster-info dump
+ 1913  ls
+ 1914  kubectl version
+ 1915  cd
+ 1916  scp -P 22 cacert.pem jaehyun@165.194.49.109:
+ 1917  exit
+ 1918  exoit
+ 1919  exit
+ 1920  hpnote
+ 1921  ls
+ 1922  hpnote
+ 1923  exit
+ 1924  hpnote
+ 1925  exit
+ 1926  lsb_release -a
+ 1927  sudo apt-get upgrade
+ 1928  ls
+ 1929  kubectl get nodes
+ 1930  kubectl get pods
+ 1931  kubectl get pods -o wide
+ 1932  clear
+ 1933  ls
+ 1934  celar
+ 1935  clear
+ 1936  ls
+ 1937  exigt
+ 1938  exit
+ 1939  hpold
+ 1940  ls
+ 1941  hpold
+ 1942  exit
+ 1943  ls
+ 1944  finger
+ 1945  clear
+ 1946  kubectl get nodes
+ 1947  kubectl get pods -o wide
+ 1948  clear
+ 1949  ls
+ 1950  clear
+ 1951  ls
+ 1952  finger
+ 1953  clear
+ 1954  ls
+ 1955  exit
+ 1956  ls
+ 1957  nvidia-smi
+ 1958  clear
+ 1959  ls
+ 1960  finger
+ 1961  clear
+ 1962  ls
+ 1963  kubectl get node
+ 1964  kubectl get service
+ 1965  ls
+ 1966  kubectl get service
+ 1967  kubectl get pod
+ 1968  kubectl get node
+ 1969  kubectl get node -o wide
+ 1970  kubectl get pod
+ 1971  kubectl get service
+ 1972  htop
+ 1973  clear
+ 1974  ls
+ 1975  htop'
+ 1976  ls
+ 1977  htop
+ 1978  nvidia-smi
+ 1979  kubectl get node -o wide
+ 1980  kubectl get pod
+ 1981  kubectl get service
+ 1982  lbs-release -a
+ 1983  kubectl get node -o wide
+ 1984  kubectl get pod
+ 1985  kubectl get pod -o wide
+ 1986  kubectl get node -o wide
+ 1987  kubectl get service -o wide
+ 1988  exit
+ 1989  ls
+ 1990  kubectl get node
+ 1991  exit
+ 1992  kubectl get nodes -o wide
+ 1993  kubectl get pods
+ 1994  hpold
+ 1995  cd _Book_k8sInfra/
+ 1996  ls
+ 1997  cd chapter
+ 1998  ls
+ 1999  cd ch5
+ 2000  cd 5.3.1
+ 2001  ls
+ 2002  vi jenkins-config.yaml 
+ 2003  pwd
+ 2004  cd 
+ 2005  cd _Book_k8sInfra/
+ 2006  cd ch5
+ 2007  cd 5.3.1
+ 2008  ls
+ 2009  vi jenkins-config.yaml 
+ 2010  pwd
+ 2011  ss
+ 2012  ls
+ 2013  vi jenkins-uninstall.sh 
+ 2014  sudo bash jenkins-uninstall.sh 
+ 2015  kubectl get deployment
+ 2016  kube get service jenkins
+ 2017  kubectl get service jenkins
+ 2018  ss
+ 2019  k get service jenkins
+ 2020  k get pod -o wide
+ 2021  k get service -o wide
+ 2022  helm repo list
+ 2023  ps -aef  | grep firefox
+ 2024  kill -9 6696
+ 2025  ps -aef  | grep firefox
+ 2026  kill -9 6696
+ 2027  firefox
+ 2028  pkill -f firefox
+ 2029  firefox
+ 2030  bg
+ 2031  k
+ 2032  k get node -o wide
+ 2033  k get pod
+ 2034  k get pod -o wide
+ 2035  which kubectl
+ 2036  which doicker
+ 2037  which docker
+ 2038  pushd /var
+ 2039  ls
+ 2040  cd run
+ 2041  ls
+ 2042  which docker.sock
+ 2043  ls
+ 2044  which jenkins
+ 2045  cd /home
+ 2046  ls
+ 2047  cd jenkins/
+ 2048  ls
+ 2049  ls -la
+ 2050  vi /etc/passwd
+ 2051  k
+ 2052  k get serviceaccount
+ 2053  k create serviceaccount --help
+ 2054  k create serviceaccount jenkins
+ 2055  k get serviceaccount
+ 2056  k create clusterrolebinding jenkins-cluster-admin --clusterrole=cluster-admin --serviceaccount=default:jenkins
+ 2057  ls
+ 2058  k get clusterrolebinding jenkins-cluster-admin -o yaml
+ 2059  k get clusterrolebinding jenkins-cluster-admin -o yaml > rbac.yaml
+ 2060  sudo k get clusterrolebinding jenkins-cluster-admin -o yaml > rbac.yaml
+ 2061  ls
+ 2062  k get clusterrolebinding jenkins-cluster-admin -o yaml > ~/jaehyun/rbac.yaml
+ 2063  k get clusterrolebinding jenkins-cluster-admin -o yaml > ~/rbac.yaml
+ 2064  history > ~/jenkins.history
+ 2065  cd
+ 2066  cd _Book_k8sInfra/
+ 2067  cd ch5
+ 2068  cd 5.4.1
+ 2069  ls
+ 2070  cat echo-ip-101.freestyle 
+ 2071  cp echo-ip-101.freestyle echo-ip-101.freestyle.hy
+ 2072  vi echo-ip-101.freestyle.hy
+ 2073  cat echo-ip-101.freestyle.hy
+ 2074  docker search nginx
+ 2075  docker run -d -p 8080:80 --name nginx-exposed --restart always nginx
+ 2076  docker run -d -p 7080:80 --name nginx-exposed --restart always nginx
+ 2077  docker ps
+ 2078  docker rm e69
+ 2079  docker stop e69
+ 2080  docker rm e69
+ 2081  docker ps
+ 2082  docker run -d -p 8080:80 --name nginx-exposed --restart always nginx
+ 2083  docker ps
+ 2084  java -version
+ 2085  mvwn
+ 2086  sudo apt install mvnw
+ 2087  cd ../..
+ 2088  cd ch4
+ 2089  ls
+ 2090  cd 4.3.1
+ 2091  ls
+ 2092  more mvnw
+ 2093  chmod 700 mvnw 
+ 2094  ..mvnw clean package
+ 2095  ./mvnw clean package
+ 2096  ls target
+ 2097  docker build -t basic-img .
+ 2098  vi Dockerfile 
+ 2099  docker image build-img
+ 2100  docker images build-img
+ 2101  ls
+ 2102  docker images basic-img
+ 2103  docker images
+ 2104  docker build -t basic-img .
+ 2105  javac
+ 2106  javac -version
+ 2107  ls
+ 2108  docker build -t basic-img:1.0 -t basic-img:2.0 .
+ 2109  docker images
+ 2110  sed -i 's/Application/Development/' Dockerfile
+ 2111  docker build -t basic-img:3.0
+ 2112  docker build -t basic-img:3.0 .
+ 2113  docker images
+ 2114  docker images basic-img
+ 2115  docker run -d -p 60431:80 --name basic-run --restart always basic-img
+ 2116  docker run -d -p 60431:80 --name basic-run --restart always basic-img:3.0
+ 2117  docker images
+ 2118  sudo apt list java*
+ 2119  sudo apt list openjdk*
+ 2120  sudo apt list openjdk-17-jdk
+ 2121  sudo apt install openjdk-17-jdk
+ 2122  yum
+ 2123  ls
+ 2124  vi Dockerfile
+ 2125  docker build -t basic-img .
+ 2126  docker images
+ 2127  docker run -d -p 60431:80 --name basic-run --restart always basic-img
+ 2128  curl 127.0.0.1:60431
+ 2129  docker images
+ 2130  cd ../4.3.3
+ 2131  ls
+ 2132  vi Dockerfile
+ 2133  ls
+ 2134  vi Dockerfile
+ 2135  git clone https://github.com/iac-source/inbuilder.git
+ 2136  ls inbuilder/
+ 2137  docker build -t nohost-img .
+ 2138  git
+ 2139  which git
+ 2140  vi Dockerfile
+ 2141  docker build -t nohost-img .
+ 2142  ls /usr/bin/git
+ 2143  vi Dockerfile
+ 2144  which git
+ 2145  vi Dockerfile
+ 2146  docker build -t nohost-img .
+ 2147  vi Dockerfile
+ 2148  docker build -t nohost-img .
+ 2149  ls
+ 2150  cd inbuilder/
+ 2151  ls
+ 2152  cp ../Dockerfile .
+ 2153  docker build -t nohost-img .
+ 2154  ls
+ 2155  vi Dockerfile 
+ 2156  ls
+ 2157  ls -lt
+ 2158  chmod 700 mvnw
+ 2159  docker build -t nohost-img .
+ 2160  ;s
+ 2161  ls
+ 2162  vi Dockerfile
+ 2163  more mvnw
+ 2164  ls
+ 2165  vi Dockerfile 
+ 2166  cd ..
+ 2167  vi Dockerfile 
+ 2168  cp inbuilder/mvnw .
+ 2169  docker build -t nohost-img .
+ 2170  ls
+ 2171  vi Dockerfile 
+ 2172  docker build -t nohost-img .
+ 2173  ls
+ 2174  vi Dockerfile 
+ 2175  ls
+ 2176  docker build -t nohost-img .
+ 2177  sudo cp -p mvnw /usr/local/bin/
+ 2178  docker build -t nohost-img .
+ 2179  rehash
+ 2180  mvnw
+ 2181  ls
+ 2182  ./mvnw
+ 2183  cd inbuilder/
+ 2184  mvnw
+ 2185  ls
+ 2186  vi mvnw.cmd
+ 2187  rm mvnw.cmd
+ 2188  ls
+ 2189  vi Dockerfile 
+ 2190  cd ..
+ 2191  ls
+ 2192  rm mvnw
+ 2193  ls
+ 2194  docker build -t nohost-img .
+ 2195  ls
+ 2196  vi Dockerfile 
+ 2197  docker build -t nohost-img .
+ 2198  sudo apt list openjdk
+ 2199  sudo apt list openjdk*
+ 2200  sudo apt list openjdk-8-jdk
+ 2201  sudo apt install openjdk-8-jdk
+ 2202  vi Dockerfile 
+ 2203  docker build -t nohost-img .
+ 2204  docker images
+ 2205  docker run -d -p 60433:80 --name nohost-run --reatart always nohost-img
+ 2206  docker run -d -p 60433:80 --name nohost-run --restart always nohost-img
+ 2207  curl 127.0.0.1:60433
+ 2208  cd ..
+ 2209  ls
+ 2210  cd 4.4.2
+ 2211  ls
+ 2212  cd ..
+ 2213  ls
+ 2214  cd 4.2.3
+ 2215  ls
+ 2216  cd ..
+ 2217  ls
+ 2218  k get node -o wide
+ 2219  cd 4.3.4
+ 2220  ls
+ 2221  vi Dockerfile 
+ 2222  docker build -t mutistage-img
+ 2223  docker build -t mutistage-img .
+ 2224  login admin
+ 2225  su
+ 2226  ls
+ 2227  cd
+ 2228  ls
+ 2229  cd .jenkins/
+ 2230  ls
+ 2231  cd war/
+ 2232  ls
+ 2233  cd ..
+ 2234  ls
+ 2235  cd ..
+ 2236  ls
+ 2237  cd
+ 2238  ls
+ 2239  su
+ 2240  ls
+ 2241  kubectl get service jenkins logs
+ 2242  k get pods
+ 2243  k get pods --namespace=devops-tools
+ 2244  k logs jenkins-68df9768b6-97lqg --namespace=devops-tools
+ 2245  vi /var/lib/jenkins/config.xml 
+ 2246  sudo vi /var/lib/jenkins/config.xml 
+ 2247  sudo systemctl restart jenkins
+ 2248  vi /var/lib/jenkins/config.xml 
+ 2249  sudo vi /var/lib/jenkins/config.xml 
+ 2250  sudo systemctl restart jenkins
+ 2251  sudo vi /var/lib/jenkins/config.xml 
+ 2252  vi /var/lib/jenkins/config.xml 
+ 2253  sudo systemctl restart jenkins
+ 2254  vi /var/lib/jenkins/config.xml 
+ 2255  echo $JENKINS_HOME
+ 2256  cd .jenkins
+ 2257  ls
+ 2258  cd ..
+ 2259  ls
+ 2260  cd
+ 2261  ls
+ 2262  cd /secret
+ 2263  cd ~/jenkins
+ 2264  ls
+ 2265  cd /home
+ 2266  ls
+ 2267  cd jenkins/
+ 2268  ls
+ 2269  ls -la
+ 2270  cd /var/lib/jenkins/
+ 2271  ls
+ 2272  cd secrets
+ 2273  ls
+ 2274  su
+ 2275  ls
+ 2276  cd ..
+ 2277  ls
+ 2278  cd ..
+ 2279  ls
+ 2280  mkdir jenkins_home
+ 2281  sudo mkdir jenkins_home
+ 2282  cd jenkins_home
+ 2283  ls
+ 2284  cd ..
+ 2285  sudo rmdir jenkins_home
+ 2286  cd lib
+ 2287  ls
+ 2288  cd jenkins/
+ 2289  ls
+ 2290  cd ..
+ 2291  ln -s /var/lib/jenkins /var/jenkins_home
+ 2292  sudo ln -s /var/lib/jenkins /var/jenkins_home
+ 2293  cd /var/jenkins_home
+ 2294  ls
+ 2295  cd /home
+ 2296  cd jenkins/
+ 2297  cd agent/
+ 2298  ls
+ 2299  cd /tmp
+ 2300  ls
+ 2301  ls jen*
+ 2302  lg
+ 2303  ss
+ 2304  ssh-copy-id -i ~/.ssh/id_rsa.pub jaehyun@165.194.49.35
+ 2305  ssh-copy-id -i ~/.ssh/id_rsa.pub jaehyun@165.194.49.35 -p 22
+ 2306  hpold
+ 2307  ssh-copy-id -i ~/.ssh/id_rsa.pub jaehyunpark@192.168.0.6 -p 22
+ 2308  lg
+ 2309  cd
+ 2310  cd _Book_k8sInfra/
+ 2311  cd ch4
+ 2312  cd 4.3.4
+ 2313  ls
+ 2314  vi dockerfile
+ 2315  ls
+ 2316  vi Dockerfile 
+ 2317  docker images 
+ 2318  ls
+ 2319  docker build -t multistage-img .
+ 2320  docker images
+ 2321  docker run -d -p 60434:80 --name multistage-run --restart always multistage-img
+ 2322  curl 127.0,0,1:60434
+ 2323  docker container ls
+ 2324  curl 0.0.0.0:60434
+ 2325  docker rm -f multistage-run
+ 2326  ls
+ 2327  cd ../4.4.1
+ 2328  ls
+ 2329  cd ..
+ 2330  ls
+ 2331  cd 4.4.2
+ 2332  ls
+ 2333  cd ..
+ 2334  ls
+ 2335  kubectl create deployment success1 --dry-run=client -o yaml --image=multistage-img >success1.yaml
+ 2336  vi 1$
+ 2337  vi success1.yaml 
+ 2338  kubectl apply -f success1.yaml 
+ 2339  k get pods -o wide
+ 2340  k delete deployment success1
+ 2341  k get pods -o wide
+ 2342  kubectl apply -f success1.yaml 
+ 2343  k get pods -o wide
+ 2344  docker images
+ 2345  cd 4.3.4
+ 2346  ls
+ 2347  vi Dockerfile 
+ 2348  docker build -t multistage-img
+ 2349  docker build -t multistage-img .
+ 2350  docker images 
+ 2351  docker tag multistge-img 165.194..45.46:8443/multistage-img
+ 2352  docker tag multistge-img 165.194.45.46:8443/multistage-img
+ 2353  docker images 
+ 2354  docker tag multistage-img 165.194.45.46:8443/multistage-img
+ 2355  docker images 165.194.45.46:8443/multistage-img
+ 2356  docker image 165.194.45.46:8443/multistage-img
+ 2357  docker tag multistage-img 165.194.45.46:8443/multistage-img
+ 2358  docker build -t multistage-img .
+ 2359  docker image 165.194.45.46:8443/multistage-img
+ 2360  docker tag multistage-img 165.194.45.46:8443/multistage-img
+ 2361  docker images
+ 2362  ls
+ 2363  cd
+ 2364  ls
+ 2365  cd _Book_k8sInfra/
+ 2366  cd ch
+ 2367  cd 4
+ 2368  ls
+ 2369  cd ch4
+ 2370  ls
+ 2371  cp success1.yaml success2.yaml
+ 2372  vi success2.yaml
+ 2373  kubectl apply -f success2.yaml 
+ 2374  kubectl get pods -o wide
+ 2375  ls
+ 2376  vi success1.yaml
+ 2377  kubectl delete pod success1
+ 2378  kubectl delete success1
+ 2379  kubectl delete -f success1.yaml
+ 2380  kubectl delete -f success2.yaml
+ 2381  kubectl get pods -o wide
+ 2382  ls
+ 2383  vi success1.yaml
+ 2384  kubectl apply -f success1.yaml 
+ 2385  vi success1.yaml
+ 2386  kubectl apply -f success1.yaml 
+ 2387  vi success1.yaml
+ 2388  kubectl apply -f success1.yaml 
+ 2389  k get pods
+ 2390  k get pods -o wide
+ 2391  ls
+ 2392  vi success2.yaml
+ 2393  kubectl apply -f success2.yaml 
+ 2394  k get pods -o wide
+ 2395  kubectl delete -f success2.yaml
+ 2396  k get pods -o wide
+ 2397  vi success2.yaml
+ 2398  diff success1.yaml success2.yaml 
+ 2399  vi success2.yaml
+ 2400  kubectl apply -f success2.yaml 
+ 2401  k get pods -o wide
+ 2402  curl 10.42.1.40
+ 2403  curl 10.42.1.39
+ 2404  kubectl get pods -o wide
+ 2405  dockerk images
+ 2406  docker images
+ 2407  ls
+ 2408  vi success2.yaml
+ 2409  vi success1.yaml
+ 2410  ls
+ 2411  c 4.4.2
+ 2412  ls
+ 2413  cd 4.4.2
+ 2414  ls
+ 2415  cd ..
+ 2416  ls
+ 2417  history
+ 2418  df
+ 2419  df -h
+ 2420  cd
+ 2421  ls
+ 2422  cd /tmp
+ 2423  ls
+ 2424  ls -la
+ 2425  du -s .
+ 2426  du -sh
+ 2427  ls
+ 2428  cd
+ 2429  ls
+ 2430  finger
+ 2431  clear
+ 2432  ls
+ 2433  htop
+ 2434  clear
+ 2435  ls
+ 2436  du -hs .
+ 2437  du -hs *
+ 2438  cd Downloads/
+ 2439  ls
+ 2440  ls -lh
+ 2441  k get service
+ 2442  cd
+ 2443  ls
+ 2444  git clone https://github.com/techiescamp/kubernetes-prometheus
+ 2445  cd kubernetes-prometheus/
+ 2446  ls
+ 2447  kubectl create namespace monitoring
+ 2448  ls
+ 2449  vi clusterRole.yaml 
+ 2450  k
+ 2451  k create -f clusterRole.yaml 
+ 2452  vi clusterRole.yaml 
+ 2453  ls
+ 2454  vi config-map.yaml 
+ 2455  k create -f config-map.yaml 
+ 2456  ls
+ 2457  vi prometheus-deployment.yaml 
+ 2458  mkdir -p /etc/prometheus
+ 2459  sudo mkdir -p /etc/prometheus
+ 2460  k create -f prometheus-deployment.yaml 
+ 2461  k get deployments --namespace=monitoring
+ 2462  k get deployments --namespace=monitoring -o wide
+ 2463  k get pods --namespace=monitoring -o wide
+ 2464  ls
+ 2465  kubectl create -f prometheus-service.yaml --namespace=monitoring
+ 2466  k get service --namespace=monitoring
+ 2467  cd ..
+ 2468  git clone https://github.com/bibinwilson/kubernetes-node-exporter
+ 2469  cd kubernetes-node-exporter/
+ 2470  ls
+ 2471  vi daemonset.yaml 
+ 2472  k create -f daemonset.yaml 
+ 2473  k get daemonset -n monitoring
+ 2474  ls
+ 2475  k create -f service.yaml 
+ 2476  k get endpoints -n monitoring
+ 2477  k get endpoints -n monitoring -o wide
+ 2478  ls
+ 2479  cd /metric
+ 2480  ls
+ 2481  cd /nfs_shared/
+ 2482  ls
+ 2483  cd jenkins/
+ 2484  ls
+ 2485  cd ..
+ 2486  ls
+ 2487  k get endpoints -n monitoring -o wide
+ 2488  which git
+ 2489  which docker
+ 2490  /usr/local/bin/docker
+ 2491  ls -n /nfs_shared/
+ 2492  ls
+ 2493  cd
+ 2494  cd Downloads/
+ 2495  cd ..
+ 2496  cd echo-ip-main/
+ 2497  ls
+ 2498  cd ..
+ 2499  ls
+ 2500  mv echo-ip-main echo-ip
+ 2501  cd echo-ip
+ 2502  ls
+ 2503  vi Jenkinsfile 
+ 2504  vi Dockerfile 
+ 2505  vi cert.crt 
+ 2506  cd crert.key
+ 2507  vi crert.key
+ 2508  vi cert.key 
+ 2509  vi nginx.conf 
+ 2510  ls
+ 2511  git init
+ 2512  git status
+ 2513  git config --global user.name "Jae-Hyun Park"
+ 2514  git config --global user.email "hyunie@cau.ac.kr"
+ 2515  git config --global credential.helper "store --file ~/.git-cred"
+ 2516  git remote add origin git@github.com:jayhyeonopark/echo-io.git
+ 2517  git add .
+ 2518  git config list
+ 2519  git config --list
+ 2520  git commit -m "init commit"
+ 2521  git branch -M main
+ 2522  git push -u origin main
+ 2523  ls ~/.ssh
+ 2524  vi ~/.ssh/id_rsa.pub 
+ 2525  git push -u origin main
+ 2526  kit status
+ 2527  git status
+ 2528  ls
+ 2529  add .
+ 2530  git add .
+ 2531  git commit -m "2nd commit"
+ 2532  ls
+ 2533  touch *
+ 2534  git add .
+ 2535  git commit -m "2nd commit"
+ 2536  git push -u origin main
+ 2537  git push origin main
+ 2538  git config status
+ 2539  git config
+ 2540  git config --list
+ 2541  more ~/.ssh/id_rsa.pub 
+ 2542  git config --global user.email "jaehyun@jaehyun-gpu"
+ 2543  git config --list
+ 2544  git push -u origin main
+ 2545  git config --get remote.origin.main
+ 2546  git config --get remote.origin.url
+ 2547  git remote show origin
+ 2548  git remote -v
+ 2549  history
+ 2550  git remote add origin2 https://github.com/jayhyeonopark/echo-io.git
+ 2551  git remote -v
+ 2552  git push -u origin2 main
+ 2553  ssh-add ~/.ssh/id_rsa.pub 
+ 2554  ls -l ~/.ssh/id_rsa.pub
+ 2555  chmod 700 ~/.ssh/id_rsa.pub
+ 2556  chmod 600 ~/.ssh/id_rsa.pub
+ 2557  ssh-add ~/.ssh/id_rsa.pub 
+ 2558  chmod 644 ~/.ssh/id_rsa.pub
+ 2559* 
+ 2560  git remote add origin3 git@github.com:22:jayhyeonopark/echo-io.git
+ 2561  git push -u origin3 main
+ 2562  git remote add origin3 github.com:22:jayhyeonpark/echo-io.git
+ 2563  git remote add origin4 github.com:22:jayhyeonpark/echo-io.git
+ 2564  git push -u origin4 main
+ 2565  git remote add origin5 git@github.com:22:jayhyeonpark/echo-io.git
+ 2566  git push -u origin5 main
+ 2567  git remote add origin6 ssh://jayhyeonpark@github.com:22/echo-io.git
+ 2568  git push -u origin6 main
+ 2569  git remote add origin6 ssh://jayhyeonpark@github.com:22/echo-io.git
+ 2570  git push -u origin6 main
+ 2571  git remote -v
+ 2572  git push -u origin2 main
+ 2573  git remote add origin7 https://github.com:22/jayhyeonpark/echo-io.git
+ 2574  git push -u origin7 main
+ 2575  git remote add origin8 https://github.com/jayhyeonpark/echo-io.git
+ 2576  git push -u origin8 main
+ 2577  vi ~/.ssh/config
+ 2578  git remote add origin9 git@github.com:jayhyeonpark/echo-io.git
+ 2579  git push -u origin9 main
+ 2580  vi ~/.ssh/config 
+ 2581  git remote -v
+ 2582  git push -u origin9 main
+ 2583  rm ~/.ssh/config 
+ 2584  git push -u origin9 main
+ 2585  ls
+ 2586  cd ..
+ 2587  cp -r echo-ip echo-ip.backup 
+ 2588  ls
+ 2589  pwd
+ 2590  cd echo-ip
+ 2591  ls
+ 2592  git push -u origin9 main
+ 2593  git remote -v
+ 2594  git push -u origin9 main
+ 2595  git pull remoteGit
+ 2596  vi ~/.ssh/config
+ 2597  git pull remoteGit://jayhyeonpark/echo-ip
+ 2598  vi ~/.ssh/config
+ 2599  git pull remoteGit://jayhyeonpark/echo-ip
+ 2600  git pull remoteGit:/jayhyeonpark/echo-ip
+ 2601  git pull remoteGit:/jayhyeonpark/echo-ip.git
+ 2602  vi ~/.ssh/config
+ 2603  git pull remoteGit:/jayhyeonpark/echo-ip.git
+ 2604  git push -m 'commit'  remoteGit:/jayhyeonpark/echo-ip.git
+ 2605  git push remoteGit:/jayhyeonpark/echo-ip.git
+ 2606  git pull remoteGit:/jayhyeonpark/echo-ip.git
+ 2607  ssh -X jayhyeonpark@github.com
+ 2608  ssh -X jayhyeonpark@github.com -p 22
+ 2609  ss
+ 2610  ssh -X jayhyeonpark@github.com -p 22
+ 2611  git remote -v
+ 2612  git push origin9 main
+ 2613  ssh-add ~/.ssh/id_rsa_git.pub
+ 2614  git push origin9 main
+ 2615  git --help
+ 2616  history
+ 2617  ssh -X jayhyeonpark@github.com -p 22
+ 2618  ssh -T jayhyeonpark@github.com -p 22
+ 2619  ssh -T git@github.com -p 22
+ 2620  git remote -v
+ 2621  git push origin3 maini
+ 2622  git push origin3 main
+ 2623  git push origin9 main
+ 2624  history
+ 2625  git push remoteGit:/jayhyeonpark/echo-ip.git
+ 2626  git pull remoteGit:/jayhyeonpark/echo-ip.git
+ 2627  ls
+ 2628  git push remoteGit:/jayhyeonpark/echo-ip.git
+ 2629  git push --help
+ 2630  history
+ 2631  git push +remoteGit:/jayhyeonpark/echo-ip.git
+ 2632  git push -u remoteGit:/jayhyeonpark/echo-ip.git
+ 2633  git push --help
+ 2634  git push -u remoteGit:/jayhyeonpark/echo-ip.git --force
+ 2635  history
+ 2636  history > ../gitsetup.history
+ 2637  ls
+ 2638  vi Jenkinsfile
+ 2639  add .
+ 2640  git add .
+ 2641  git commit -m "Second commit"
+ 2642  git push -u remoteGit:/jayhyeonpark/echo-ip.git
+ 2643  ks
+ 2644  ls
+ 2645  vi Dockerfile 
+ 2646  push /etc
+ 2647  pushd /etc
+ 2648  cd nginx
+ 2649  popd
+ 2650  ls
+ 2651  vi Dockerfile 
+ 2652  sudo apt install nginx
+ 2653  pushd /etc
+ 2654  ls
+ 2655  cd nginx/
+ 2656  ls
+ 2657  popd
+ 2658  ls
+ 2659  vi Dockerfile
+ 2660  ls
+ 2661  vi Dockerfile 
+ 2662  ls
+ 2663  oldhp
+ 2664  hpold
+ 2665  docker exec -it -u root docker://c1a865345980d971d86367adafdae554ee71d4ddaccc14bc592df1847cbaf774 /bin/bash
+ 2666  docker exec -it -u root c1a865345980d971d86367adafdae554ee71d4ddaccc14bc592df1847cbaf774 /bin/bash
+ 2667  history | grep git
+ 2668  git push -u remoteGit:/jayhyeonpark/echo-ip.git
+ 2669  ls
+ 2670  k
+ 2671  k get deployment
+ 2672  k get pods
+ 2673  k get pods -n=devops-tools
+ 2674  k get deployment -n=devops-tools
+ 2675  k delete deployment jenkins
+ 2676  k delete deployment -n=devops-tools
+ 2677  k delete deployment --selector=jenkins
+ 2678  k delete deployment --selector=aps=jenkins
+ 2679  k get deployment --all
+ 2680  k delete deployment --selector=jenkins
+ 2681  k get deployment -n=devops-tools
+ 2682  k delete deployment jenkins -n=devops-tools
+ 2683  k get pod -n=devops-tools
+ 2684  k delete pod -n=devops-tools
+ 2685  k get pod -n=devops-tools
+ 2686  k get pod --all
+ 2687  k get pod -n=all
+ 2688  k get pod 
+ 2689  k get pod --all-namespace
+ 2690  k get pod --all-namespaces
+ 2691  history
+ 2692  history > success.history
+ 2693  kubectl exec --namespace default -it svc/jenkins -c jenkins -- /bin/cat /run/secrets/additional/chart-admin-password && echo
+ 2694  ps -aef | grep chrom
+ 2695  pkill
+ 2696  pkill --help
+ 2697  pkill -9 chrom
+ 2698  ps -aef | grep chrom
+ 2699  docker ps
+ 2700  k ps
+ 2701  k get pods
+ 2702  htop
+ 2703  k delete pod svcl-grafana
+ 2704  k delete pod svcl-grafana-r5
+ 2705  k delete pod svcl-grafana-r5f57
+ 2706  k get pods
+ 2707  k delete pod svclb
+ 2708  history
+ 2709  history > success.history

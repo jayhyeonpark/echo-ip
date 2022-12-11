@@ -9,15 +9,15 @@ pipeline {
     stage('docker build and push') {
       steps {
         sh '''
-        docker build -t 165.194.45.46:8443/echo-ip .
-        docker push 165.194.45.46:8443/echo-ip
+        docker build -t 165.194.45.46:9443/echo-ip .
+        docker push 165.194.45.46:9443/echo-ip
         '''
       }
     }
     stage('deploy kubernetes') {
       steps {
         sh '''
-        kubectl create deployment pl-bulk-prod --image=165.194.45.46:8443/echo-ip
+        kubectl create deployment pl-bulk-prod --image=165.194.45.46:9443/echo-ip
         kubectl expose deployment pl-bulk-prod --type=LoadBalancer --port=8080 \
                                                --target-port=80 --name=pl-bulk-prod-svc
         '''
